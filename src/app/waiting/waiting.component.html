@@ -1,0 +1,10 @@
+<section class="container">
+  <p *ngIf="emailValid">Thank You! We will notify you when our website is ready</p>
+  <p *ngIf="emailNonValid">Please enter a valid email address</p>
+  <form (submit)="handleSubmitEmail(); $event.preventDefault()">
+    <input type="text" [formControl]="email" placeholder="Enter you email" spellcheck="false"/>
+    <button type="submit">Submit</button>
+  </form>
+  <p>Our website will be coming soon. Enter your email to get notified when our website is ready.</p>
+</section>
+

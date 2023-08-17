@@ -1,0 +1,49 @@
+.container {
+    height: 100vh;
+    background-image: url("/assets/img/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+
+    p {
+	text-align: center;
+    }
+}
+
+form {
+    display: grid;
+    grid-template-columns: 80% auto;
+    gap: 0.4rem;
+    max-width: 40rem;
+    width: 100%;
+
+    input {
+	font-family: inherit;
+	color: inherit;
+	background-color: transparent;
+	border: 0 transparent;
+	box-shadow: 0 0 0 .14em white;
+	padding: .8em 1em;
+
+	&:focus {
+	    outline: 0 transparent;
+	}
+    }
+
+    button {
+	color: #000;
+	border: 0 transparent;
+	background-color: #fff;
+	padding: .8em 1em;
+	box-shadow: 0 0 0 .14em white;
+    }
+}
+
+::placeholder {
+    color: inherit;
+    opacity: 1;
+}

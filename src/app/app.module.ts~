@@ -1,0 +1,18 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent } from './app.component';
+import { WaitingComponent } from './waiting/waiting.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    WaitingComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
