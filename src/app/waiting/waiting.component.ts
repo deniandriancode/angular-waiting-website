@@ -22,4 +22,12 @@ export class WaitingComponent {
 	    this.emailValid = false;
 	}
     }
+
+    hideCurrentElement(arg: number) {
+	if (arg == 0) {
+	    this.emailValid = false;
+	} else {
+	    this.emailNonValid = false;
+	}
+    }
 }

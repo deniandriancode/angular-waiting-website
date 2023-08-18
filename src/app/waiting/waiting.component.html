@@ -1,6 +1,6 @@
 <section class="container">
-  <p *ngIf="emailValid">Thank You! We will notify you when our website is ready</p>
-  <p *ngIf="emailNonValid">Please enter a valid email address</p>
+  <p *ngIf="emailValid" role="button" (click)="hideCurrentElement(0)" class="notif">Thank You! We will notify you when our website is ready</p>
+  <p *ngIf="emailNonValid" role="button" (click)="hideCurrentElement(1)" class="notif">Please enter a valid email address</p>
   <form (submit)="handleSubmitEmail(); $event.preventDefault()">
     <input type="text" [formControl]="email" placeholder="Enter you email" spellcheck="false"/>
     <button type="submit">Submit</button>
